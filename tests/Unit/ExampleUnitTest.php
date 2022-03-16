@@ -18,7 +18,7 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
-
+    
     public function testUserCreation()
     {
         $user = new User([
@@ -26,7 +26,7 @@ class ExampleTest extends TestCase
             'email' => "test@mail.com",
             'password' => bcrypt("testpassword")
         ]);   
-
+    
         $this->assertEquals('Test User', $user->name);
     }
 }
